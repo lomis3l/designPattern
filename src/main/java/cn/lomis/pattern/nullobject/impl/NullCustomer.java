@@ -1,0 +1,16 @@
+package cn.lomis.pattern.nullobject.impl;
+
+import cn.lomis.pattern.nullobject.AbstractCustomer;
+
+public class NullCustomer extends AbstractCustomer {
+
+	@Override
+	public String getName() {
+		return "Not Available in Customer Database";
+	}
+
+	@Override
+	public boolean isNil() {
+		return true;
+	}
+}
